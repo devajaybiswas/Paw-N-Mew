@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw N' Mew</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrap">
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+            <img src="/logo2.png" alt="Paw N' Mew Logo" id="logo">
+        </a>
+            <div class="divider hide-mobile"></div>
+            <a href="#" class="home hide-mobile">Home</a>
+        </div>
+        
+        <nav>
+            <a href="#" class="menu-open hide-desktop">
+            <img src="/menu.svg" alt="open menu">
+        </a>
+        <ul>
+            <li class="hide-desktop">
+                <a href="#" class="menu-close">
+                    <img src="/close.svg" alt="close menu">
+                </a>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>
+            A Second Home for Your Pets.
+        </h1>
+        <p class="subhead">
+            Our dedicated team provides a safe, fun, and loving environment where your furry friends can play and thrive. Whether it's daycare, grooming, or boarding, we ensure your pet feels right at home while you're away.
+        </p>
+        <a href="#" class="primary-cta">Call Us</a>
+    </main>
+
+    <div class="cat-and-dog-container">
+        <div class="cat-and-dog">
+            <img src="/cat-and-dog-2.png" alt="cat and dog illustration">
+            <div class="inner-circle"></div>
+            <div class="outer-circle"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () => {
+       menu.classList.add('open'); 
+    } );
+    
+    closeBtn.addEventListener('click', () => {
+       menu.classList.remove('open') ;
+    } );
+
+</script>
+
+</body>
+</html>

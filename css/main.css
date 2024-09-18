@@ -1,0 +1,211 @@
+body {
+    background-color: #ecd9ff;
+    margin: 0;
+    font-family: 'Inter';}
+
+    /* Targeting the image itself */
+#logo {
+    height: 20px; /* Set height of the logo */
+    width: auto; /* Keep aspect ratio */
+    }
+
+.hide-mobile {
+    display: none;}
+
+.wrap {
+    margin: 3em;}
+
+header {
+    display: flex;
+    justify-content: space-between;}
+
+nav ul {
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    right: 0%;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    width: 25%;
+    text-align: right;
+    padding: 2em;
+    transform: translatex(100%); 
+    transition: transform 0.5s ease-in-out;
+
+    li {
+        margin: 1.5em 0;
+
+        &:nth-of-type(1) {
+            margin-bottom: 4em;
+        }
+
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        &:hover {
+            color: #cf9fff;}}}} 
+
+.open{
+    transform: translateX(0%);}
+
+h1, p {
+    text-align: center;}
+
+h1 {
+    margin-top: 2em;}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;}
+
+a.primary-cta { 
+    background: #cf9fff;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color:black;
+    border-radius: .5em;
+    margin-top: 10%;}
+
+.cat-and-dog {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 3em;
+    
+    img {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);}
+
+    .inner-circle, .outer-circle {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);}
+
+        .inner-circle {
+            background: #cf9fff;
+            width: 300px;
+            height: 300px;
+            z-index: -1;}
+
+        .outer-circle {
+            background: white;
+            width: 500px;
+            height: 500px;
+            z-index: -2;} }
+
+             @media (min-width: 790px) {
+                 .wrap {
+                    margin: 0 4em;  
+                    }
+                    .hide-desktop {
+                    display: none;
+                    }
+                    .hide-mobile {
+                        display: block;
+                    }
+                    .header-left {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 1em;
+
+                            .divider {
+                                height: 40px;
+                                width: 1px;
+                                border-right: 2px solid grey;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-size: 1.5rem;}}
+                                    
+                                nav ul {
+                                    position: unset;
+                                    background: none;
+                                    display: flex;
+                                    gap: 2em;
+                                    height: auto;
+                                    width: auto;
+                                    transform: translateX(0%);
+
+                                    li a {
+                                        font-size: 1.2rem;}}
+                                        }
+
+                                        @media (min-width: 900px) {
+                                            h1, p {
+                                                text-align: left;
+                                            }
+
+                                            main {
+                                                width: 50%;
+                                            }
+
+                                            .cat-and-dog {
+                                                margin-top: 0;
+                                                
+                                                .inner-circle {
+                                                    width: 500px;
+                                                    height: 500px;
+                                                }
+                                                .outer-circle {
+                                                    width: 800px;
+                                                    height: 800px;
+                                                }
+                                            }
+
+                                            .cat-and-dog-container {
+                                                position: absolute;
+                                                z-index: -1;
+                                                width: 50%;
+                                                top: 20%;
+                                                right: 0;
+                                            }
+                                            
+                                        }
+
+                                        @media (min-width: 1300px) {
+
+                                            .wrap {
+                                                margin: 0 auto;
+                                                padding: 0 2em; 
+                                                max-width: 1300px;
+                                            }
+
+                                            a.primary-cta {
+                                                display: inline;
+                                                width: auto;
+                                                padding: 1em 2em;
+                                            }
+
+                                            .subhead{
+                                                margin-bottom: 3em;
+                                            }
+                                            }
+                                            .cat-and-dog {
+                                                position: relative;
+
+                                                img {
+                                                    max-width: 500px;
+                                                    left: 50%;
+                                                }
+                                            }
+
+                                        
